@@ -1,5 +1,5 @@
 # Load data 
-data <- read.csv2('C:\\Users\\aleksander.molak\\Documents\\Personal\\ADEM\\KOB-MES_pooled data v eng.csv')
+data <- read.csv2('\\ADEM\\KOB-MES_pooled data v eng.csv')
 
 # Import libs
 library(dplyr)
