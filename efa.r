@@ -52,9 +52,6 @@ max_load_3 <- apply(pttrn_3, 1, FUN=max)
 max_v2_vec <- as.matrix(max_load_2)
 max_v3_vec <- as.matrix(max_load_3)
 
-# Get congruence coef
-fa.congruence(max_v2_vec, max_v3_vec)
-
 # Define congruence coefficient function
 congr_coef <- function(x1, x2) {
   nmrtr = sum(x1*x2)
@@ -63,4 +60,12 @@ congr_coef <- function(x1, x2) {
 }
 
 # Get congruence coef
-congr_coef(max_v2_vec, max_v3_vec)
+congr_coef(sol_2_load$PA1, sol_3_load$PA1)
+congr_coef(sol_2_load$PA2, sol_3_load$PA2)
+congr_coef(sol_2_load$PA3, sol_3_load$PA3)
+congr_coef(sol_2_load$PA1, sol_3_load$PA2)
+congr_coef(sol_2_load$PA1, sol_3_load$PA3)
+congr_coef(sol_2_load$PA2, sol_3_load$PA1)
+congr_coef(sol_2_load$PA3, sol_3_load$PA1)
+congr_coef(sol_2_load$PA3, sol_3_load$PA2)
+congr_coef(sol_2_load$PA2, sol_3_load$PA3)
